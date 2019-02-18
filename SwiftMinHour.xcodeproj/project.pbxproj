@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		140D96FE4434FC0433469CA6 /* Pods_SwiftMinHour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F3536483E85B2253E017319 /* Pods_SwiftMinHour.framework */; };
+		C643292C221A485F0006BD1D /* screenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = C643292B221A485F0006BD1D /* screenShot.png */; };
 		C67476952213C33A00FDDD8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67476942213C33A00FDDD8A /* AppDelegate.swift */; };
 		C67476972213C33A00FDDD8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67476962213C33A00FDDD8A /* ViewController.swift */; };
 		C674769A2213C33A00FDDD8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67476982213C33A00FDDD8A /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		0F3536483E85B2253E017319 /* Pods_SwiftMinHour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftMinHour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		225E37AFC39A86A3930F1266 /* Pods-SwiftMinHour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMinHour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMinHour/Pods-SwiftMinHour.debug.xcconfig"; sourceTree = "<group>"; };
 		86E968B47568B9FFA6B9F745 /* Pods-SwiftMinHour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftMinHour.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftMinHour/Pods-SwiftMinHour.release.xcconfig"; sourceTree = "<group>"; };
+		C643292B221A485F0006BD1D /* screenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenShot.png; sourceTree = "<group>"; };
 		C67476912213C33A00FDDD8A /* SwiftMinHour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMinHour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67476942213C33A00FDDD8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C67476962213C33A00FDDD8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C643292A221A47F10006BD1D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C643292B221A485F0006BD1D /* screenShot.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		C67476882213C33900FDDD8A = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		C67476932213C33A00FDDD8A /* SwiftMinHour */ = {
 			isa = PBXGroup;
 			children = (
+				C643292A221A47F10006BD1D /* Images */,
 				C67476AE2213EA0000FDDD8A /* Tools */,
 				C67476A92213E51400FDDD8A /* ViewModel */,
 				C67476A82213E4F800FDDD8A /* Api */,
@@ -218,6 +229,7 @@
 				C674769F2213C33C00FDDD8A /* LaunchScreen.storyboard in Resources */,
 				C674769C2213C33C00FDDD8A /* Assets.xcassets in Resources */,
 				C674769A2213C33A00FDDD8A /* Main.storyboard in Resources */,
+				C643292C221A485F0006BD1D /* screenShot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
