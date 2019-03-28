@@ -25,17 +25,25 @@ class ViewController: UIViewController {
         return indexView
     }()
     
+    let eventBgView : MinhourEventBgView = {
+        let eventBgView = MinhourEventBgView.init(frame: CGRect.zero)
+        return eventBgView
+    }()
+
     let minhourViewModel = MinhourViewModel()
     
     var minhourHelper : MinhourDataHelper?
 
+    let disposeBag = DisposeBag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.title = "沪铜1903";
+        self.title = "沪铜1905";
         print("success")
         self.setUpSubViews()
         self.loadMinhourData()
+        self.addLongPressGesture()
     }
     
     //UI布局
@@ -54,8 +62,29 @@ class ViewController: UIViewController {
             make.bottom.left.right.equalTo(self.view)
             make.top.equalTo(mainView.snp.bottom)
         }
+        
+        self.view.addSubview(eventBgView)
+        eventBgView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        eventBgView.isHidden = true
     }
     
+    //增加long手势
+    func addLongPressGesture() {
+        let longGesture = UILongPressGestureRecognizer()
+        longGesture.rx.event.bind(onNext: { recognizer in
+            if recognizer.state == .ended {
+                self.eventBgView.isHidden = true
+            }else {
+                let point = recognizer.location(in: self.view)
+                self.eventBgView.isHidden = false
+                self.eventBgView.slideVerticalLinePoint(point: point)
+            }
+        }).disposed(by: disposeBag)
+        self.view.addGestureRecognizer(longGesture)
+    }
+
     //请求分时数据
     func loadMinhourData() {
         //创建loading框
@@ -68,7 +97,7 @@ class ViewController: UIViewController {
         }
         //沪铜03
         loading.startAnimating()
-        minhourViewModel.requestMinHourData(contract: "CU03",callback: { (json) in
+        minhourViewModel.requestMinHourData(contract: "CU05",callback: { (json) in
             loading.stopAnimating()
             loading.removeFromSuperview()
             let minhourArray = json["data"]["minuteDatas"].arrayValue
@@ -89,6 +118,9 @@ class ViewController: UIViewController {
             self.indexView.cjlLineModelArray = self.minhourHelper?.cjlLineModelArray
             self.indexView.drawMinhourDateOriginX(dateArray: self.minhourHelper!.calculateXdate())
             self.indexView.setNeedsDisplay()
+            
+            self.eventBgView.minhourHelper = self.minhourHelper
+            self.eventBgView.dataArray = self.mainView.dataArray
         })
     }
 }

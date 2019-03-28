@@ -23,6 +23,9 @@
 		C67476B82214091E00FDDD8A /* MinhourDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67476B72214091E00FDDD8A /* MinhourDataHelper.swift */; };
 		C67476BA22156A8C00FDDD8A /* CommonMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67476B922156A8C00FDDD8A /* CommonMacro.swift */; };
 		C67476BC2216616700FDDD8A /* MinhourIndexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67476BB2216616700FDDD8A /* MinhourIndexHelper.swift */; };
+		C6C6D7EC224B77E900586827 /* MinhourDetailValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D7EB224B77E900586827 /* MinhourDetailValueView.swift */; };
+		C6C6D7EE224B7A2100586827 /* CommonConfigHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D7ED224B7A2100586827 /* CommonConfigHelper.swift */; };
+		C6C6D7F0224B8A6B00586827 /* MinhourEventBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C6D7EF224B8A6B00586827 /* MinhourEventBgView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		C67476B72214091E00FDDD8A /* MinhourDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhourDataHelper.swift; sourceTree = "<group>"; };
 		C67476B922156A8C00FDDD8A /* CommonMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMacro.swift; sourceTree = "<group>"; };
 		C67476BB2216616700FDDD8A /* MinhourIndexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhourIndexHelper.swift; sourceTree = "<group>"; };
+		C6C6D7EB224B77E900586827 /* MinhourDetailValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhourDetailValueView.swift; sourceTree = "<group>"; };
+		C6C6D7ED224B7A2100586827 /* CommonConfigHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConfigHelper.swift; sourceTree = "<group>"; };
+		C6C6D7EF224B8A6B00586827 /* MinhourEventBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinhourEventBgView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,8 @@
 			children = (
 				C67476AA2213E58200FDDD8A /* MinhourMainView.swift */,
 				C67476AC2213E5AF00FDDD8A /* MinhourIndexView.swift */,
+				C6C6D7EB224B77E900586827 /* MinhourDetailValueView.swift */,
+				C6C6D7EF224B8A6B00586827 /* MinhourEventBgView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 			children = (
 				C67476AF2213EA3D00FDDD8A /* UIColorTools.swift */,
 				C67476B922156A8C00FDDD8A /* CommonMacro.swift */,
+				C6C6D7ED224B7A2100586827 /* CommonConfigHelper.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -293,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C6D7EE224B7A2100586827 /* CommonConfigHelper.swift in Sources */,
 				C67476B82214091E00FDDD8A /* MinhourDataHelper.swift in Sources */,
 				C67476B6221402D900FDDD8A /* MinhourModel.swift in Sources */,
 				C67476972213C33A00FDDD8A /* ViewController.swift in Sources */,
@@ -301,7 +311,9 @@
 				C67476B02213EA3D00FDDD8A /* UIColorTools.swift in Sources */,
 				C67476952213C33A00FDDD8A /* AppDelegate.swift in Sources */,
 				C67476AD2213E5AF00FDDD8A /* MinhourIndexView.swift in Sources */,
+				C6C6D7EC224B77E900586827 /* MinhourDetailValueView.swift in Sources */,
 				C67476BA22156A8C00FDDD8A /* CommonMacro.swift in Sources */,
+				C6C6D7F0224B8A6B00586827 /* MinhourEventBgView.swift in Sources */,
 				C67476AB2213E58200FDDD8A /* MinhourMainView.swift in Sources */,
 				C67476B22213F3B600FDDD8A /* MinhourViewModel.swift in Sources */,
 			);
