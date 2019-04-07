@@ -90,11 +90,11 @@ class GJCommonConfigHelper {
      判断字典是否包含键
      */
     class func checkDictKey(withDict dict: [AnyHashable : Any]?, key: String?) -> Bool {
-        if GJCommonConfigHelper.checkResponseDataIsNull(dict as! NSObject) {
+        if GJCommonConfigHelper.checkResponseDataIsNull(dict! as NSObject) {
             //字典是否为空
             return false
         }
-        if GJCommonConfigHelper.checkResponseDataIsNull(key as! NSObject) {
+        if GJCommonConfigHelper.checkResponseDataIsNull(key! as NSObject) {
             //key是否为空
             return false
         }
